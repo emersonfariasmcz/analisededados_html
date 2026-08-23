@@ -51,6 +51,8 @@ O fluxo de dados e renderização acontece inteiramente no lado do cliente (*Cli
 ---
 
 # 🛠️ Destaques Técnicos & UI/UX
+# 🎯 Visão Geral do Projeto
+
 Design System Moderno: Estrutura visual baseada em grids do tipo Bento Box, proporcionando uma hierarquia clara de informações e cartões de KPI com mini-gráficos de tendência (sparklines).
 
 - Mecanismo de Filtros Cruzados: Filtragem instantânea por marcas, canais de venda, formas de pagamento, estados (UF), vendedores e intervalos de datas personalizados ou predefinidos (YTD, 7d, 30d, 90d).
@@ -106,12 +108,13 @@ O dashboard localizará o arquivo vendas_2.xlsx automaticamente no diretório, p
 ---
 
 # 👤 Contato
-Desenvolvido por Emerson da Silva Farias.
 
 💼 LinkedIn: linkedin.com/in/emersonfariasbr
 🌐 Site/Portfólio: emersonfarias.com.br
 💻 GitHub: @emersonfariasmcz
 📸 Instagram: @emersonfarias.dev
 🎥 YouTube: @emersonfariasdev
+
+---
 
 Se este projeto ajudou você ou serviu de inspiração, não se esqueça de deixar uma ⭐️!
