@@ -44,6 +44,7 @@ O fluxo de dados e renderização acontece inteiramente no lado do cliente (*Cli
                                                             | Renderização Dinâmica  |
                                                             | (Chart.js + DOM HTML)  |
                                                             +------------------------+
+
 1. Ingestão & Parsing (SheetJS): Leitura assíncrona do arquivo Excel (vendas_2.xlsx) diretamente no navegador, convertendo linhas brutas em objetos estruturados via ArrayBuffer.
 2. Motor Analítico & Estado: Processamento em tempo real de agregações, filtros globais por múltiplos parâmetros, faixas de datas, busca textual e cálculos de variações percentuais.
 3 Camada Visual (Chart.js & CSS Variables): Geração dinâmica de gráficos interativos (linhas temporais, roscas de market share, barras horizontais de ranking) com adaptação instantânea de paletas para modo claro ou escuro.
