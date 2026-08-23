@@ -45,45 +45,46 @@ O fluxo de dados e renderização acontece inteiramente no lado do cliente (*Cli
                                                             | (Chart.js + DOM HTML)  |
                                                             +------------------------+
 
-1. Ingestão & Parsing (SheetJS): Leitura assíncrona do arquivo Excel (vendas_2.xlsx) diretamente no navegador, convertendo linhas brutas em objetos estruturados via ArrayBuffer.
+# 1. Ingestão & Parsing (SheetJS): Leitura assíncrona do arquivo Excel (vendas_2.xlsx) diretamente no navegador, convertendo linhas brutas em objetos estruturados via ArrayBuffer.
+# 2. Motor Analítico & Estado: Processamento em tempo real de agregações, filtros globais por múltiplos parâmetros, faixas de datas, busca textual e cálculos de variações percentuais.
+# 3 Camada Visual (Chart.js & CSS Variables): Geração dinâmica de gráficos interativos (linhas temporais, roscas de market share, barras horizontais de ranking) com adaptação instantânea de paletas para modo claro ou escuro.
 
-2. Motor Analítico & Estado: Processamento em tempo real de agregações, filtros globais por múltiplos parâmetros, faixas de datas, busca textual e cálculos de variações percentuais.
+---
 
-3 Camada Visual (Chart.js & CSS Variables): Geração dinâmica de gráficos interativos (linhas temporais, roscas de market share, barras horizontais de ranking) com adaptação instantânea de paletas para modo claro ou escuro.
-
-🛠️ Destaques Técnicos & UI/UX
+### 🛠️ Destaques Técnicos & UI/UX
 Design System Moderno: Estrutura visual baseada em grids do tipo Bento Box, proporcionando uma hierarquia clara de informações e cartões de KPI com mini-gráficos de tendência (sparklines).
 
-Mecanismo de Filtros Cruzados: Filtragem instantânea por marcas, canais de venda, formas de pagamento, estados (UF), vendedores e intervalos de datas personalizados ou predefinidos (YTD, 7d, 30d, 90d).
-
-Modo Escuro / Claro Dinâmico: Alternância de temas em tempo real com persistência de preferência via localStorage.
-
-Exportação e Relatórios: Funcionalidade nativa para exportar os dados filtrados em formato .CSV estruturado ou gerar uma visualização otimizada para impressão física/PDF (window.print).
+- Mecanismo de Filtros Cruzados: Filtragem instantânea por marcas, canais de venda, formas de pagamento, estados (UF), vendedores e intervalos de datas personalizados ou predefinidos (YTD, 7d, 30d, 90d).
+- Modo Escuro / Claro Dinâmico: Alternância de temas em tempo real com persistência de preferência via localStorage.
+- Exportação e Relatórios: Funcionalidade nativa para exportar os dados filtrados em formato .CSV estruturado ou gerar uma visualização otimizada para impressão física/PDF (window.print).
 
 Resiliência e Fallback de Carga: Sistema de carregamento inteligente que detecta automaticamente restrições de CORS em servidores locais, disponibilizando um seletor manual de arquivos (vendas_2.xlsx) para garantir que o projeto funcione em qualquer ambiente.
 
-📂 Estrutura do Repositório
+---
 
+### 📂 Estrutura do Repositório
 .
 ├── index.html         # Aplicação completa (HTML, CSS customizado e Lógica JS)
 ├── vendas_2.xlsx      # Base de dados de vendas utilizada para alimentação do BI
 └── README.md          # Documentação oficial do repositório
 
+---
 
-🚀 Tecnologias Utilizadas
-Linguagens: HTML5 Semântico, CSS3 (Variáveis, Flexbox, Grid) e JavaScript (ES6+).
+### 🚀 Tecnologias Utilizadas
 
-Bibliotecas de Terceiros:
+# Linguagens: HTML5 Semântico, CSS3 (Variáveis, Flexbox, Grid) e JavaScript (ES6+).
 
-Chart.js (v3.9.1) — Renderização de gráficos dinâmicos.
+# Bibliotecas de Terceiros:
+- Chart.js (v3.9.1) — Renderização de gráficos dinâmicos.
+- SheetJS (xlsx) (v0.18.5) — Leitura e interpretação de arquivos Excel.
 
-SheetJS (xlsx) (v0.18.5) — Leitura e interpretação de arquivos Excel.
+# Tipografia: Google Fonts (Plus Jakarta Sans e JetBrains Mono).
 
-Tipografia: Google Fonts (Plus Jakarta Sans e JetBrains Mono).
+# Ambiente: Execução 100% Client-Side (compatível com qualquer navegador moderno).
 
-Ambiente: Execução 100% Client-Side (compatível com qualquer navegador moderno).
+---
 
-📥 Como Baixar e Executar o Projeto
+### 📥 Como Baixar e Executar o Projeto
 Para testar e visualizar o projeto em funcionamento na sua máquina local, siga os passos abaixo:
 
 1. Clonar ou Baixar o Repositório
@@ -98,13 +99,14 @@ Ambiente de Servidor Local (Recomendado): Se preferir evitar alertas de seguran�
 
 # Python 3
 python -m http.server 8000
-
 (Em seguida, acesse http://localhost:8000 no seu navegador).
 
 3. Validação Automática
 O dashboard localizará o arquivo vendas_2.xlsx automaticamente no diretório, processará os registros, calculará os KPIs e renderizará todos os gráficos de performance de vendas instantaneamente. Caso utilize o arquivo em modo estrito sem servidor, utilize o botão seletor integrado que aparecerá na tela para carregar o arquivo .xlsx.
 
-👤 Contato
+---
+
+### 👤 Contato
 Desenvolvido por Emerson da Silva Farias.
 
 💼 LinkedIn: linkedin.com/in/emersonfariasbr
