@@ -21,7 +21,7 @@ Projeto de **Business Intelligence (BI) e Data Visualization Frontend**, consist
 
 ---
 
-## 🎯 Visão Geral do Projeto
+# 🎯 Visão Geral do Projeto
 
 O objetivo deste projeto foi desenvolver uma aplicação web analítica autossuficiente — composta por arquivos leves e sem dependência de servidores complexos — capaz de ler, tratar e exibir dados dinâmicos de vendas diretamente no navegador.
 
@@ -29,7 +29,7 @@ A interface foi projetada sob conceitos avançados de UI/UX (estética *Bento Bo
 
 ---
 
-## 🏗️ Arquitetura e Componentes da Solução
+# 🏗️ Arquitetura e Componentes da Solução
 
 O fluxo de dados e renderização acontece inteiramente no lado do cliente (*Client-Side Rendering*):
 
@@ -44,14 +44,13 @@ O fluxo de dados e renderização acontece inteiramente no lado do cliente (*Cli
                                                             | Renderização Dinâmica  |
                                                             | (Chart.js + DOM HTML)  |
                                                             +------------------------+
-
-# 1. Ingestão & Parsing (SheetJS): Leitura assíncrona do arquivo Excel (vendas_2.xlsx) diretamente no navegador, convertendo linhas brutas em objetos estruturados via ArrayBuffer.
-# 2. Motor Analítico & Estado: Processamento em tempo real de agregações, filtros globais por múltiplos parâmetros, faixas de datas, busca textual e cálculos de variações percentuais.
-# 3 Camada Visual (Chart.js & CSS Variables): Geração dinâmica de gráficos interativos (linhas temporais, roscas de market share, barras horizontais de ranking) com adaptação instantânea de paletas para modo claro ou escuro.
+1. Ingestão & Parsing (SheetJS): Leitura assíncrona do arquivo Excel (vendas_2.xlsx) diretamente no navegador, convertendo linhas brutas em objetos estruturados via ArrayBuffer.
+2. Motor Analítico & Estado: Processamento em tempo real de agregações, filtros globais por múltiplos parâmetros, faixas de datas, busca textual e cálculos de variações percentuais.
+3 Camada Visual (Chart.js & CSS Variables): Geração dinâmica de gráficos interativos (linhas temporais, roscas de market share, barras horizontais de ranking) com adaptação instantânea de paletas para modo claro ou escuro.
 
 ---
 
-### 🛠️ Destaques Técnicos & UI/UX
+# 🛠️ Destaques Técnicos & UI/UX
 Design System Moderno: Estrutura visual baseada em grids do tipo Bento Box, proporcionando uma hierarquia clara de informações e cartões de KPI com mini-gráficos de tendência (sparklines).
 
 - Mecanismo de Filtros Cruzados: Filtragem instantânea por marcas, canais de venda, formas de pagamento, estados (UF), vendedores e intervalos de datas personalizados ou predefinidos (YTD, 7d, 30d, 90d).
@@ -62,7 +61,7 @@ Resiliência e Fallback de Carga: Sistema de carregamento inteligente que detect
 
 ---
 
-### 📂 Estrutura do Repositório
+# 📂 Estrutura do Repositório
 .
 ├── index.html         # Aplicação completa (HTML, CSS customizado e Lógica JS)
 ├── vendas_2.xlsx      # Base de dados de vendas utilizada para alimentação do BI
@@ -70,7 +69,7 @@ Resiliência e Fallback de Carga: Sistema de carregamento inteligente que detect
 
 ---
 
-### 🚀 Tecnologias Utilizadas
+# 🚀 Tecnologias Utilizadas
 
 # Linguagens: HTML5 Semântico, CSS3 (Variáveis, Flexbox, Grid) e JavaScript (ES6+).
 
@@ -84,7 +83,7 @@ Resiliência e Fallback de Carga: Sistema de carregamento inteligente que detect
 
 ---
 
-### 📥 Como Baixar e Executar o Projeto
+# 📥 Como Baixar e Executar o Projeto
 Para testar e visualizar o projeto em funcionamento na sua máquina local, siga os passos abaixo:
 
 1. Clonar ou Baixar o Repositório
@@ -106,17 +105,13 @@ O dashboard localizará o arquivo vendas_2.xlsx automaticamente no diretório, p
 
 ---
 
-### 👤 Contato
+# 👤 Contato
 Desenvolvido por Emerson da Silva Farias.
 
 💼 LinkedIn: linkedin.com/in/emersonfariasbr
-
 🌐 Site/Portfólio: emersonfarias.com.br
-
 💻 GitHub: @emersonfariasmcz
-
 📸 Instagram: @emersonfarias.dev
-
 🎥 YouTube: @emersonfariasdev
 
 Se este projeto ajudou você ou serviu de inspiração, não se esqueça de deixar uma ⭐️!
